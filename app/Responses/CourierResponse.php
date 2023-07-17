@@ -21,18 +21,18 @@ class CourierResponse
         'message' => 'Data Not Found',
     ];
     public const COURIER_STORE_SUCCESS= [
-        'success' => false,
+        'success' => true,
         'code' => 201,
         'message' => 'Create Courier Success',
     ];
     public const COURIER_UPDATE_SUCCESS= [
-        'success' => false,
+        'success' => true,
         'code' => 200,
         'message' => 'Update Courier Success',
     ];
 
     public const COURIER_DELETE_SUCCESS= [
-        'success' => false,
+        'success' => true,
         'code' => 200,
         'message' => 'Delete Courier Success',
     ];

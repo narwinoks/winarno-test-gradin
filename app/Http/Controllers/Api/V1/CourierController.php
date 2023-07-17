@@ -25,7 +25,7 @@ class CourierController extends Controller
         $courier            =  $this->courierService->index($request);
         $courierResource    = new CorierCollection($courier);
         $courierTransform   = json_decode($courierResource->toResponse($request)->getContent(), true);
-        return success(CourierResponse::COURIER_SUCCESS, $courierTransform, 201);
+        return success(CourierResponse::COURIER_SUCCESS, $courierTransform, 200);
     }
 
     public  function show($id,Request $request)
@@ -33,7 +33,7 @@ class CourierController extends Controller
         $courier            =  $this->courierService->show($id);
         $courierResource    = new CourierRespource($courier);
         $courierTransform   = json_decode($courierResource->toResponse($request)->getContent(), true);
-        return success(CourierResponse::COURIER_SUCCESS, $courierTransform, 201);
+        return success(CourierResponse::COURIER_SUCCESS, $courierTransform, 200);
     }
 
     public  function store(StoreRequest $request){
